@@ -1,79 +1,118 @@
 body {
-  background: #141E30;
-  background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
-  background: linear-gradient(-45deg, #35577D, #141E30);
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
-/* Style for the main heading */
-h1 {
-  color: #FFF;
-  font-size: 2em;
-  padding-top: 100px;
-  width: 100%;
-}
-
-/* Style for subheadings */
-h2 {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  color: rgba(255, 255, 255, 0.5);
+.navigation li {
   font-weight: 100;
-  font-size: 22px;
-  line-height: 24px;
-  padding-bottom: 30px;
-  text-align: left;
-  width: 70%;
+  letter-spacing: 2px;
+  padding: 20px;
 }
 
-/* Style for paragraphs */
-p {
-  color: aliceblue;
-  line-height: 1.3em;
-  text-align: left;
+.navigation  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+#banner {
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
   width: 100%;
 }
 
-/* Style for bylines */
-.byline {
-  font-family: Helvetica;
-  color: rgba(255, 255, 255, 0.5);
-  float: left;
-  font-size: 14px;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
-
-/* Style for captions */
-.caption {
-  display: block;
-  font-family: 'Playfair Display', serif;
-  font-size: 14px;
-  font-style: italic;
-  line-height: 14px;
-  margin-left: 20px;
-  padding: 10px;
+#banner .content h1 {
+  border: 3px solid white;
   position: relative;
-  top: 80%;
-  width: 60%;
+  top: 50px;
+  width: 400px;
+  margin: 0 auto;
 }
 
-/* Style for the main content container */
-.content {
+#main {
+  margin: 0 auto;
   padding: 40px;
+  text-align: center;
+  width: 400px;
+  height: 1000px;
+  overflow: scroll;
 }
 
-/* Style for the background image */
-.image {
-  background-image: url("https://content.codecademy.com/courses/web-101/unit-4/htmlcss1-img_soccer.jpeg");
-  background-size: cover;
-  background-position: center;
-  height: 300px;
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
 }
 
-/* Style for writer's image with a shadow */
-.writer-img {
-  box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
-  float: left;
-  width: 50px;
+h2 {
+  border: 1px dotted red;
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  padding: 20px 30px;
+  margin: 30px 20px;
+  text-align: center;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+  margin-top: 60px;
+  padding: 10px 20px;
+}
+
+.pull-quote {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
 }
