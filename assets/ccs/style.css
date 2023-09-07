@@ -1,14 +1,12 @@
 body {
-  /* Old browsers */
   background: #141E30;
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(-45deg, #35577D, #141E30);
   margin: 0;
   padding: 0;
 }
 
+/* Style for the main heading */
 h1 {
   color: #FFF;
   font-size: 2em;
@@ -16,6 +14,7 @@ h1 {
   width: 100%;
 }
 
+/* Style for subheadings */
 h2 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
@@ -27,6 +26,7 @@ h2 {
   width: 70%;
 }
 
+/* Style for paragraphs */
 p {
   color: aliceblue;
   line-height: 1.3em;
@@ -34,6 +34,7 @@ p {
   width: 100%;
 }
 
+/* Style for bylines */
 .byline {
   font-family: Helvetica;
   color: rgba(255, 255, 255, 0.5);
@@ -43,6 +44,7 @@ p {
   text-transform: uppercase;
 }
 
+/* Style for captions */
 .caption {
   display: block;
   font-family: 'Playfair Display', serif;
@@ -56,10 +58,12 @@ p {
   width: 60%;
 }
 
+/* Style for the main content container */
 .content {
   padding: 40px;
 }
 
+/* Style for the background image */
 .image {
   background-image: url("https://content.codecademy.com/courses/web-101/unit-4/htmlcss1-img_soccer.jpeg");
   background-size: cover;
@@ -67,9 +71,8 @@ p {
   height: 300px;
 }
 
+/* Style for writer's image with a shadow */
 .writer-img {
-  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
-  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
   box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
   float: left;
   width: 50px;
