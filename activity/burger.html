@@ -1,95 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Additional Styles for Larger Design */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            text-align: center;
-        }
-
-        img {
-            width: 280px; /* Increased logo size */
-            margin: 0 auto;
-        }
-
-        span {
-            margin: 15px 0; /* Increased top and bottom margin */
-            font-size: 24px; /* Larger font size */
-        }
-
-        .content {
-            height: 600px; /* Increased content height */
-            margin: 20px auto; /* Increased margin */
-            padding: 0 40px; /* Increased padding */
-            overflow: auto; /* Make .content scrollable */
-        }
-
-        .body {
-            margin: 0 auto;
-        }
-
-        .header {
-            height: 400px; /* Increased header height */
-        }
-
-        .header h1 {
-            padding: 40px; /* Increased padding */
-            margin: 0 auto;
-            font-size: 36px; /* Larger font size */
-        }
-
-        .button {
-            width: 240px; /* Increased button width */
-            padding: 30px; /* Increased padding */
-            margin: 60px auto; /* Increased margin */
-            border: 2px solid blue; /* Increased border width */
-        }
-
-        ul.nutrition {
-            padding: 40px; /* Increased padding */
-        }
-
-        ul.nutrition li {
-            width: 240px; /* Increased list item width */
-            padding: 20px; /* Increased padding */
-            margin-bottom: 5px; /* Increased bottom margin */
-            font-size: 20px; /* Larger font size */
-        }
-    </style>
+  <title>Davie JR's Menu</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style1.3.css">
 </head>
+
 <body>
-    <nav>
-        <img src="https://www.bakingbusiness.com/ext/resources/2020/5/BKAtHome_Lead.jpg?height=667&t=1588594539&width=1080" alt="Davies Burger Logo">
-        <span>Home</span>
-        <span>Menu</span>
-        <span>Contact</span>
-    </nav>
-    <div class="content">
-        <div class="body">
-            <div class="header">
-                <h1>BBQ BACON BURGER</h1>
-            </div>
-            <div class="button">
-                <a href="#">ORDER NOW</a>
-            </div>
-            <ul class="nutrition">
-                <li>Calories: 500</li>
-                <li>Fat: 20g</li>
-                <li>Protein: 30g</li>
-                <li>Carbs: 45g</li>
-            </ul>
-        </div>
-    </div>
+  <nav>
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" />
+    <span><a href="#">MENU</a></span>
+    <span><a href="#">NUTRITION</a></span>
+    <span><a href="#">ORDER</a></span>
+    <span><a href="#">LOCATIONS</a></span>
+  </nav>
+  <div class="content">
+    <div class="header">
+      <h1>BBQ BACON BURGER</h1>
+    </div>
+
+
+    <div class="body">
+      <p>
+        Our BBQ Bacon Burger features our special house ground blend of wagyu and sirloin, spiced perfectly, and finished off with just a drop of white truffle oil. A butter grilled brioche bun layered with roasted red onion, perfectly crispy pork belly, and our hickory smoked BBQ sauce.
+      </p>
+
+      <a href="#" class="button">ORDER NOW</a>
+      
+      <ul class="nutrition">
+        <li>
+          <span class="category">CALORIES</span>
+          <span class="value">678</span>
+        </li>
+        <li>
+          <span class="category">FAT</span>
+          <span class="value">32</span>
+        </li>
+        <li>
+          <span class="category">PROTEIN</span>
+          <span class="value">8</span>
+        </li>
+        <li>
+          <span class="category">CARBOHYDRATES</span>
+          <span class="value">34</span>
+        </li>
+        <li>
+          <span class="category">SODIUM</span>
+          <span class="value">112</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+
+
 </body>
 </html>
+body {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_foodlogo.png");
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  nav {
+    text-align: center;
+  }
+  
+  nav img {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+  }
+  
+  nav span {
+    display: block;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 10px 0;
+  }
+  
+  nav a {
+    color: #666666;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: #05A8AA;
+    padding: 5px;
+  }
+  
+  
+  .content {
+    height: 500px;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  
+  .header {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burgerphoto.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+  }
+  
+  .header h1 {
+    background-color: #05A8AA;
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 68%;
+  }
+  
+  .content .body {
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .body p {
+    color: #333333;
+    font-weight: 100;
+    line-height: 34px;
+    width: 90%;
+    margin-top: 18px;
+  }
+  
+  .button {
+    border: 1px solid #05A8AA;
+    border-radius: 4px;
+    color: #05A8AA;
+    display: block;
+    font-weight: 700;
+    margin: 40px auto;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .button:hover {
+    background-color: #05A8AA;
+    border: 1px solid #05A8AA;
+    color: #FFF;
+  }
+  ul.nutrition {
+    padding: 20px;
+  }
+  
+  ul.nutrition li {
+    display: inline-block;
+    background-color: #05A8AA;
+    list-style: none;
+    margin-bottom: 3px;
+    padding: 10px 20px;
+    width: 200px;
+  }
+  
+  .nutrition .category {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    display: block;
+  }
+  
+  .nutrition .value {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
 
