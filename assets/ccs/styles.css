@@ -1,28 +1,19 @@
-/* Reset some default styles */
-body, h1, h2, h3, p {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
     margin: 0;
     padding: 0;
 }
 
-/* Basic styling */
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Box styling */
 .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
 }
 
 .box {
-    width: calc(50% - 20px); /* Adjust the width as needed */
-    background-color: #f0f0f0;
+    width: calc(50% - 20px);
+    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
@@ -30,19 +21,7 @@ header {
     margin-bottom: 20px;
 }
 
-/* Pie chart box */
 .pie-chart-box {
-    width: calc(50% - 20px); /* Adjust the width as needed */
+    width: 40%;
     text-align: center;
-    margin-left: 20px;
-}
-
-/* Centering the boxes on larger screens */
-@media (min-width: 768px) {
-    .box {
-        width: calc(33.33% - 20px);
-    }
-    .pie-chart-box {
-        width: calc(66.66% - 20px);
-    }
 }
