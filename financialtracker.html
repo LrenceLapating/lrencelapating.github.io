@@ -3,54 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <title>Financial Tracker</title>
+    <title>Financial App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Financial Tracker</h1>
-    </header>
     <div class="container">
-        <section class="balance-box box">
-            <h2>Balance</h2>
-            <p>$5000.00</p> <!-- Replace with dynamic balance -->
-        </section>
-        <section class="income-box box">
-            <h2>Income</h2>
-            <p>$3000.00</p> <!-- Replace with dynamic income -->
-        </section>
-        <section class="expenses-box box">
-            <h2>Expenses</h2>
-            <p>$1000.00</p> <!-- Replace with dynamic expenses -->
-        </section>
-    </div>
-    <section class="pie-chart-box">
-        <div class="box">
-            <h2>Expense Breakdown</h2>
-            <canvas id="myPieChart" width="250" height="250"></canvas>
+        <header>
+            <h1>Financial App</h1>
+        </header>
+        <div class="input-section">
+            <h2>Adding Income</h2>
+            <form>
+                <input type="text" placeholder="Source">
+                <input type="number" placeholder="Amount">
+                <button>Add Income</button>
+            </form>
         </div>
-    </section>
-
-    <script>
-        // Sample data for the pie chart
-        var data = {
-            labels: ['Rent', 'Utilities', 'Food', 'Shopping', 'Other'],
-            datasets: [{
-                data: [30, 20, 25, 15, 10], // Replace with your data
-                backgroundColor: ['#FF5733', '#FFC300', '#36A2EB', '#4CAF50', '#9B59B6'], // Colors for each category
-            }]
-        };
-
-        // Create the pie chart
-        var ctx = document.getElementById('myPieChart').getContext('2d');
-        var myPieChart = new Chart(ctx, {
-            type: 'pie',
-            data: data,
-            options: {
-                maintainAspectRatio: false // Disable aspect ratio to adjust the size
-            }
-        });
-    </script>
+        <div class="input-section">
+            <h2>Adding Expenses</h2>
+            <form>
+                <input type="text" placeholder="Category">
+                <input type="text" placeholder="Description">
+                <input type="number" placeholder="Amount">
+                <button>Add Expense</button>
+            </form>
+        </div>
+        <div class="transaction-list">
+            <h2>Viewing Transactions</h2>
+            <ul>
+                <li>
+                    <span>Income</span>
+                    <span>Salary</span>
+                    <span>$2000</span>
+                </li>
+                <li>
+                    <span>Expense</span>
+                    <span>Groceries</span>
+                    <span>-$100</span>
+                </li>
+                <!-- More transactions here -->
+            </ul>
+        </div>
+        <div class="balance">
+            <h2>Current Balance</h2>
+            <span>$1900</span>
+        </div>
+        <div class="filter-section">
+            <h2>Filtering Transactions</h2>
+            <select>
+                <option value="all">All</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <input type="date" placeholder="Select date">
+        </div>
+    </div>
 </body>
 </html>
