@@ -1,4 +1,3 @@
-/* Reset some default styles */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -16,13 +15,15 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-color: #f0f0f0;
 }
 
 .balance-box {
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .income-expenses {
@@ -31,20 +32,38 @@ header {
 }
 
 .income, .expenses {
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.income {
+    border-left: 4px solid #4CAF50; /* Green */
+}
+
+.expenses {
+    border-left: 4px solid #F44336; /* Red */
 }
 
 .transactions {
     padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .filter {
     padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .pie-chart {
     /* Styles for the pie chart (requires JavaScript) */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
