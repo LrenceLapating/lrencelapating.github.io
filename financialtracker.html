@@ -24,14 +24,6 @@
             <h2>Expenses</h2>
             <p>$1000.00</p> <!-- Replace with dynamic expenses -->
         </section>
-        <section class="transactions-box box">
-            <h2>Transactions</h2>
-            <!-- Transaction list goes here -->
-        </section>
-        <section class="filter-box box">
-            <h2>Filter Transactions</h2>
-            <!-- Filter options go here -->
-        </section>
     </div>
     <section class="pie-chart-box">
         <div class="box">
@@ -40,25 +32,6 @@
         </div>
     </section>
 
-    <script>
-        // Sample data for the pie chart
-        var data = {
-            labels: ['Rent', 'Utilities', 'Food', 'Shopping', 'Other'],
-            datasets: [{
-                data: [30, 20, 25, 15, 10], // Replace with your data
-                backgroundColor: ['#FF5733', '#FFC300', '#36A2EB', '#4CAF50', '#9B59B6'], // Colors for each category
-            }]
-        };
-
-        // Create the pie chart
-        var ctx = document.getElementById('myPieChart').getContext('2d');
-        var myPieChart = new Chart(ctx, {
-            type: 'pie',
-            data: data,
-            options: {
-                maintainAspectRatio: false // Disable aspect ratio to adjust the size
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
