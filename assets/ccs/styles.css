@@ -1,3 +1,4 @@
+/* Reset some default styles */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -11,59 +12,27 @@ header {
     padding: 10px;
 }
 
-.balance {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
-
-.balance-box {
+/* Box styling */
+.box {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
 }
 
-.income-expenses {
-    display: flex;
-    gap: 20px;
+/* Pie chart box */
+.pie-chart-box {
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
 }
 
-.income, .expenses {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.income {
-    border-left: 4px solid #4CAF50; /* Green */
-}
-
-.expenses {
-    border-left: 4px solid #F44336; /* Red */
-}
-
-.transactions {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.filter {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.pie-chart {
-    /* Styles for the pie chart (requires JavaScript) */
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Centering the boxes on larger screens */
+@media (min-width: 768px) {
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
