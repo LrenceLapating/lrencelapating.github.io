@@ -32,6 +32,25 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script>
+        // Sample data for the pie chart
+        var data = {
+            labels: ['Rent', 'Utilities', 'Food', 'Shopping', 'Other'],
+            datasets: [{
+                data: [30, 20, 25, 15, 10], // Replace with your data
+                backgroundColor: ['#FF5733', '#FFC300', '#36A2EB', '#4CAF50', '#9B59B6'], // Colors for each category
+            }]
+        };
+
+        // Create the pie chart
+        var ctx = document.getElementById('myPieChart').getContext('2d');
+        var myPieChart = new Chart(ctx, {
+            type: 'pie',
+            data: data,
+            options: {
+                maintainAspectRatio: false // Disable aspect ratio to adjust the size
+            }
+        });
+    </script>
 </body>
 </html>
