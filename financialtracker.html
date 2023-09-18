@@ -11,35 +11,43 @@
     <header>
         <h1>Financial Tracker</h1>
     </header>
-    <section class="balance">
-        <div class="balance-box">
+    <section class="balance-box">
+        <div class="box">
             <h2>Balance</h2>
             <p>$5000.00</p> <!-- Replace with dynamic balance -->
         </div>
-        <div class="income-expenses">
-            <div class="income">
-                <h3>Income</h3>
-                <p>$3000.00</p> <!-- Replace with dynamic income -->
-            </div>
-            <div class="expenses">
-                <h3>Expenses</h3>
-                <p>$1000.00</p> <!-- Replace with dynamic expenses -->
-            </div>
+    </section>
+    <section class="income-box">
+        <div class="box">
+            <h2>Income</h2>
+            <p>$3000.00</p> <!-- Replace with dynamic income -->
         </div>
     </section>
-    <section class="transactions">
-        <h2>Transactions</h2>
-        <!-- Transaction list goes here -->
+    <section class="expenses-box">
+        <div class="box">
+            <h2>Expenses</h2>
+            <p>$1000.00</p> <!-- Replace with dynamic expenses -->
+        </div>
     </section>
-    <section class="filter">
-        <h2>Filter Transactions</h2>
-        <!-- Filter options go here -->
+    <section class="transactions-box">
+        <div class="box">
+            <h2>Transactions</h2>
+            <!-- Transaction list goes here -->
+        </div>
     </section>
-    <section class="pie-chart">
-        <h2>Expense Breakdown</h2>
-        <canvas id="myPieChart" width="400" height="400"></canvas>
+    <section class="filter-box">
+        <div class="box">
+            <h2>Filter Transactions</h2>
+            <!-- Filter options go here -->
+        </div>
     </section>
-    
+    <section class="pie-chart-box">
+        <div class="box">
+            <h2>Expense Breakdown</h2>
+            <canvas id="myPieChart" width="200" height="200"></canvas>
+        </div>
+    </section>
+
     <script>
         // Sample data for the pie chart
         var data = {
@@ -54,7 +62,10 @@
         var ctx = document.getElementById('myPieChart').getContext('2d');
         var myPieChart = new Chart(ctx, {
             type: 'pie',
-            data: data
+            data: data,
+            options: {
+                maintainAspectRatio: false // Disable aspect ratio to adjust the size
+            }
         });
     </script>
 </body>
