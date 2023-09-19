@@ -7,11 +7,11 @@ body {
 
 .container {
     background-color: #fff;
-    width: 100%; /* Updated to make it full-width */
-    margin: 20px 0; /* Removed 'auto' to center vertically */
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
+    border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Added to clear floats */
 }
 
 header {
@@ -87,3 +87,4 @@ input[type="date"] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
