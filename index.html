@@ -5,7 +5,6 @@
   <link href="https://cdn.wallpapersafari.com/62/20/wJkD7l.jpg" rel="stylesheet">
   <link rel="stylesheet" href="./assets/ccs/style.css">
   <style>
- 
     .navigation {
       list-style-type: none;
       margin: 0;
@@ -30,23 +29,51 @@
     .navigation a:hover {
       text-decoration: underline;
     }
+
+    /* Add styles for the dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
   </style>
 </head>
 <body>
-
   <nav class="navigation">
     <ul>
       <li><strong>My Portfolio</strong></li>
       <li><strong>Marc Laurence A. Lapating</strong></li>
       <li class="logo">THE TERMINAL</li>
-      <li><a href="https://lrencelapating.github.io/schedule.html">Wine Festival Schedule</a></li>
-      <li><a href="https://lrencelapating.github.io/burger.html">Davies Burger</a></li>
-      <li><a href="https://lrencelapating.github.io/fashion.html">Fashion Blog</a></li>
- <li><a href="https://lrencelapating.github.io/financialtracker.html">Financial Tracker</a></li>
+      
+      <!-- Add the dropdown menu "Learn CSS Activities" here -->
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Learn CSS Activities</a>
+        <div class="dropdown-content">
+          <ul>
+            <li><a href="https://lrencelapating.github.io/schedule.html">Wine Festival Schedule</a></li>
+            <li><a href="https://lrencelapating.github.io/burger.html">Davies Burger</a></li>
+            <li><a href="https://lrencelapating.github.io/fashion.html">Fashion Blog</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Other menu items -->
+      <li><a href="https://lrencelapating.github.io/financialtracker.html">Financial Tracker</a></li>
     </ul>
   </nav>
   
-
   <div id="banner">
     <div class="content">
       <h1>Web Development</h1>
