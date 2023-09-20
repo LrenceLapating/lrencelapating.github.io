@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Tracker</title>
-    <link rel="stylesheet" href="./assets/ccs/style3.css">
-</head>
+<link rel="stylesheet" href="./assets/ccs/style3.css"></head>
 <body>
     <div class="container">
         <header>
@@ -14,24 +13,45 @@
         <div class="input-section">
             <h2>Adding Income</h2>
             <form>
-                <input type="text" placeholder="" readonly>
-                <input type="number" placeholder="" readonly>
+                <input type="text" placeholder="Source"readonly>
+                <input type="number" placeholder="Amount"readonly>
                 <button disabled>Add Income</button>
             </form>
         </div>
         <div class="input-section">
             <h2>Adding Expenses</h2>
             <form>
-                <input type="text" placeholder="" readonly>
-                <input type="text" placeholder="" readonly>
-                <input type="number" placeholder="" readonly>
+                <input type="text" placeholder="Category" readonly>
+                <input type="text" placeholder="Description" readonly>
+                <input type="number" placeholder="Amount">
                 <button disabled>Add Expense</button>
             </form>
         </div>
         <div class="transaction-list">
             <h2>Viewing Transactions</h2>
             <ul>
-                <!-- Transaction list entries here -->
+                <li>
+                    <span>Date</span>
+                    <span>Type</span>
+                    <span>Category</span>
+                    <span>Description</span>
+                    <span>Amount</span>
+                </li>
+                <li>
+                    <span>2023-09-18 10:30 AM</span>
+                    <span>Income</span>
+                    <span>Salary</span>
+                    <span>Monthly Salary</span>
+                    <span>$2000</span>
+                </li>
+                <li>
+                    <span>2023-09-17 05:00 PM</span>
+                    <span>Expense</span>
+                    <span>WaterBills</span>
+                    <span>Monthly WaterBills</span>
+                    <span>-$100</span>
+                </li>
+                <!-- More transactions here -->
             </ul>
         </div>
         <div class="balance">
@@ -55,6 +75,7 @@
                 <li><span style="color: red;">Shopping</span> <span>15%</span></li>
                 <li><span style="color: black;">Subscriptions</span> <span>5%</span></li>
                 <li><span style="color: blue;">Bills</span> <span>20%</span></li>
+                <!-- Add more categories here -->
             </ul>
         </div>
     </div>
