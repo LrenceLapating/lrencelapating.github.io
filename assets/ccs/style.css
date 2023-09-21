@@ -109,7 +109,7 @@ line-height: 1.2;
     height: 100%;
     background: white;
     animation: showRight 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: .5s;
     }  
 
 .home-content h3 {
@@ -129,7 +129,7 @@ color:#00abf0;
     height: 100%;
     background: white;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.3s;
+    animation-delay: .5s;
 
 }
 .home-content p {
@@ -147,7 +147,7 @@ margin: 20px 0 40px;
     height: 100%;
     background: white;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.6s;
+    animation-delay: .5s;
     }  
 
 
@@ -169,7 +169,7 @@ height: 50px;
     height: 100%;
     background: white;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.3s;
+    animation-delay: .6s;
     }  
 
 
@@ -270,7 +270,7 @@ transition: .5s;
     height: 100%;
     background: white;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.5s;
+    animation-delay: .5s;
     }  
 
 
@@ -337,4 +337,5 @@ opacity: .20;
 }
 
 }
+
 
