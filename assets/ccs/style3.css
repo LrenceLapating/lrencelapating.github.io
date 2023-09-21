@@ -12,6 +12,7 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Add rounded corners to the container */
 }
 
 header {
@@ -21,6 +22,7 @@ header {
 
 h1 {
     color: #333;
+    font-size: 24px; /* Increase the font size */
 }
 
 .input-section {
@@ -38,6 +40,7 @@ input[type="number"] {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px; /* Increase the font size */
 }
 
 button {
@@ -47,6 +50,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 18px; /* Increase the font size */
 }
 
 button:hover {
@@ -65,6 +69,7 @@ button:hover {
     background-color: #f9f9f9;
     margin-bottom: 10px;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to each transaction item */
 }
 
 .balance {
@@ -72,8 +77,9 @@ button:hover {
     background-color: #4caf50;
     color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px; /* Add rounded corners to the balance box */
     margin-top: 20px;
+    font-size: 20px; /* Increase the font size */
 }
 
 .filter-section {
@@ -86,5 +92,5 @@ input[type="date"] {
     margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px; /* Increase the font size */
 }
-
