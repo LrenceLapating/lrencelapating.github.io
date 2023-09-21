@@ -337,5 +337,27 @@ opacity: .20;
 }
 
 }
+.navbar {
+    position: relative;
+}
 
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #081b29;
+    border: 1px solid #081b29;
+    z-index: 1;
+    width: max-content;
+}
 
+.navbar a:hover + .dropdown,
+.dropdown:hover {
+    display:block;
+  
+
+/* Add this to style the dropdown link on hover */
+.dropdown a:hover {
+    color: #00abf0;
+}
