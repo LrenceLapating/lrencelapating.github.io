@@ -1,154 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>The Terminal - Your Source for Fact-Based News</title>
-  <link href="https://images.pexels.com/photos/1567069/pexels-photo-1567069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/ccs/style.css">
-  <style>
-  .navigation li a {
-      border: 1px solid black;
-      padding: 10px 20px; 
-      border-radius: 5px; 
-    }
-
-    /* Style for hovered menu items */
-    .navigation li a:hover {
-      background-color: lightgray;
-      color: black;
-    }
-
-
-    .navigation {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .navigation li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-
-    .navigation strong {
-      color: black;
-      font-weight: bold;
-    }
-
-    .navigation a {
-      color: blue;
-      text-decoration: none;
-    }
-
-    .navigation a:hover {
-      text-decoration: underline;
-    }
-
-    /* Add styles for the dropdown menus */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-.text-effect {
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-  font-size: 65px; /* Adjust the font size */
-  text-align: center; /* Center align the text */
-  padding: 10px ; /* Add padding to adjust the border size */
-  margin: 0; /* Remove default margin to fit the border snugly */
-  line-height: 1; /* Adjust line height to fit the border snugly */
-}
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website HTML CSS Only | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
 </head>
+
 <body>
-  <nav class="navigation">
-    <ul>
-      <li><strong>My Portfolio</strong></li>
-      <li><strong>Marc Laurence A. Lapating</strong></li>
-      <li class="logo">THE TERMINAL</li>
-      
-      <!-- Dropdown menu for "Davies Burger" -->
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Learn CSS Activities</a>
-        <div class="dropdown-content">
-          <ul>
-            <li><a href="https://lrencelapating.github.io/burger.html">Davies Burger</a></li>
-          </ul>
-        </div>
-      </li>
+    
+<header class=" header">
+<a href="#" class="logo">Lors</a>
 
-      <!-- Dropdown menu for "Wine Festival Schedule" and "Fashion Blog" -->
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Learn HTML Activities</a>
-        <div class="dropdown-content">
-          <ul>
-            <li><a href="https://lrencelapating.github.io/schedule.html">Wine Festival</a></li>
-            <li><a href="https://lrencelapating.github.io/fashion.html">Fashion Blog</a></li>
-          </ul>
-        </div>
-      </li>
 
-      <!-- Other menu items -->
-      <li><a href="https://lrencelapating.github.io/financialtracker.html">Financial Tracker</a></li>
-    </ul>
-  </nav>
-<div id="banner">
-  <div class="content">
-    <h1><span class="text-effect">Web Development</span></h1>
-  </div>
+<nav class="navbar">
+
+<a href="#" class="active">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Portfolio</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="home">
+<div class="home-content">
+<h1>Hi, Im Marc Laurence Lapating</h1>
+<h3> Web Developer</h3>
+<p> I live in Davao City and i choose this subject WebDev because there
+    so much i need to learn different kind of things and furthermore.   
+</p>
+<div class="btn-box">
+<a href="#">Hire Me</a>
+<a href="#">Lets Talk</a>
+</div>
+</div>
+<div class="home-sci">   
+<a href="#"><i class='bx bxl-facebook'></i></a>
+<a href="#"><i class='bx bxl-github' ></i></a>
+<a href="#"><i class='bx bxl-tiktok' ></i></a>
 </div>
 
+<span class="home-imgHover"></span>
 
-  <div id="main" class="content">
-    <h3>Web Developers in different society hits diff!.</h3>
-    <span class="byline">WRITTEN BY: Marc Laurence Lapating
-    <p>Web development is the process of creating websites or web applications that are accessible through the internet. It encompasses a wide range of activities, including web design, front-end development, back-end development, and web server configuration. Here are some key aspects of web development.</p>
-
-    <p>Web Hosting and Deployment: After developing a website or web application, it needs to be hosted on a web server and made accessible to users on the internet. This involves configuring web servers, domain registration, and deploying the application. Popular hosting platforms include AWS, Azure, Heroku, and shared hosting providers.</p>
-
-    <div class="pull-quote">
-      <h2>"THE LEAGUE EMBRACES RESPONSIBLE AND DIVERSIFIED USE OF THE LAKE'S RESOURCES WHILE PROTECTING AND RESTORING ITS NATURAL ATTRIBUTES"</h2>
-    </div>
-
-    <p>Since 1980, the Lake Tahoe Interagency Monitoring Program (LTIMP) has been measuring stream discharge and concentrations of nutrients and sediment in up to 10 tributary streams in the Lake Tahoe Basin, California-Nevada. The objectives of the LTIMP are to acquire and disseminate the water quality information necessary to support science-based environmental planning and decision making in the basin. The LTIMP is a cooperative program with support from 12 federal and state agencies with interests in the Tahoe Basin. This data set, together with more recently acquired data on urban runoff water quality, is being used by the Lahontan Regional Water Quality Control Board to develop a program (mandated by the Clean Water Act) to limit the flux of nutrients and fine sediment to the Lake.</p>
-
-    <p>UC Davis remains a primary steward of the lake. The UC Davis Tahoe Environmental Research Center is dedicated to research, education and public outreach, and to providing objective scientific information for restoration and sustainable use of the Lake Tahoe Basin. Each year, it produces a well-publicized "State of the Lake" assessment report.</p>
-  </div>
-
-  <div class="share">
-    <a href="#">SHARE</a>
-    <a href="#">FAVORITE</a>
-    <a href="#">READ</a>
-  </div>
+</section>
 
 </body>
-</html>
 
+</html>
