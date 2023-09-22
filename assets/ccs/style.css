@@ -36,7 +36,7 @@ z-index: 100;
 .logo{
 position: relative;
 font-size: 60px;
-color: #ededed;
+color: #00abf0;
 text-decoration: none;
 font-weight: 600;
 
@@ -60,10 +60,11 @@ animation-delay: .4s;
 .navbar a {
 
     font-size: 18px;
-color: #ededed;
+color: #00abf0;
 text-decoration: none;
 font-weight: 500;
 margin-left: 35px;
+position: relative;
 
 }
 
@@ -71,7 +72,7 @@ margin-left: 35px;
 
 .navbar a:hover,
 .navbar a:active{
-color: #00abf0;
+color: #081b29;
 
 }
 
@@ -79,7 +80,7 @@ color: #00abf0;
 
 
 height: 100vh;
-background: url('https://gifdb.com/images/high/scary-mumbling-ghost-c42ncebjyhpszw5t.gif') no-repeat;
+background: url('https://i.pinimg.com/originals/df/c9/de/dfc9de58f31107dea5d340e7dcecc362.gif') no-repeat;
 background-size: cover;
 background-position: center;
 display: flex;
@@ -344,9 +345,8 @@ opacity: .20;
 .dropdown {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 100;
-    right: 200;
+    top: 100; /* Position the dropdown at the bottom */
+    left: 0;
     background: #081b29;
     border: 1px solid #081b29;
     z-index: 1;
