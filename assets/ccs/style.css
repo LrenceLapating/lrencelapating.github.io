@@ -12,8 +12,7 @@ overflow-y: scroll;
 color:#ededed;
 
 
-
-
+margin-bottom: 2200px;
 
 
 }
@@ -417,5 +416,77 @@ line-height: normal;
     height: 300px;
   position: absolute;
   border-radius: 150px;
+
  }
- 
+  .profilepicture1 {
+    top: 700px;
+   left: 50x;
+   width: 1000px;
+    height: 500px;
+  position: absolute;
+  }
+  .profilepicture2 {
+    top: 1400px;
+   left: 50x;
+   width: 1000px;
+    height: 500px;
+  position: absolute;
+  
+
+
+
+ }
+ .home-text22 {
+    
+    text-align: center;
+    margin-bottom: 500px;
+   padding-bottom: 500px;
+top: 600px;
+left: 0px;
+color: #081b29;
+ width: 808px;
+height: auto;
+position: absolute;
+font-size: 30px;
+ font-style: Regular;
+ text-align: left;
+ font-family: Itim;
+font-weight: 400;
+line-height: normal;
+ font-stretch: normal;
+text-decoration: none;
+ }
+ .home-text22 p {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify
+ }
+
+
+.home-text23 {
+   
+   text-align: center;
+   margin-bottom: 500px;
+  padding-bottom: 500px;
+top: 650px;
+left: 0px;
+color: #081b29;
+width: 808px;
+height: auto;
+position: absolute;
+font-size: 18px;
+font-style: Regular;
+text-align: left;
+font-family: Itim;
+font-weight: 400;
+line-height: normal;
+font-stretch: normal;
+text-decoration: none;
+}
+.home-text23 p {
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 20px;
+   text-align: justify
+}
