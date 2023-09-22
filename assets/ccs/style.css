@@ -79,7 +79,7 @@ color: #00abf0;
 
 
 height: 100vh;
-background: url('https://images.pexels.com/photos/2885320/pexels-photo-2885320.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat;
+background: url('https://gifdb.com/images/high/scary-mumbling-ghost-c42ncebjyhpszw5t.gif') no-repeat;
 background-size: cover;
 background-position: center;
 display: flex;
@@ -356,8 +356,53 @@ opacity: .20;
 .dropdown:hover {
     display:block;
   
-
+}
 /* Add this to style the dropdown link on hover */
 .dropdown a:hover {
     color: #00abf0;
 }
+
+.home-text21 {
+    margin-bottom: 200px;
+top: 1270px;
+left: 523px;
+color: #081b29;
+ width: 808px;
+height: auto;
+position: absolute;
+font-size: 28px;
+ font-style: Regular;
+ text-align: left;
+ font-family: Itim;
+font-weight: 400;
+line-height: normal;
+ font-stretch: normal;
+text-decoration: none;
+ }
+ .home-text30 {
+    margin-bottom: 200px;
+ top: 1533px;
+ left: 519px;
+ color: #081b29;
+width: 808px;
+ height: auto;
+ position: absolute;
+ font-size: 28px;
+font-style: Regular;
+ text-align: left;
+ font-family: Itim;
+ font-weight: 400;
+line-height: normal;
+ font-stretch: normal;
+ text-decoration: none;
+ }
+
+ .profilepicture {
+    top: 1255px;
+   left: 50x;
+   width: 300px;
+    height: 300px;
+  position: absolute;
+  border-radius: 150px;
+ }
+ 
