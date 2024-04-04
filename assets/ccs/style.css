@@ -391,23 +391,24 @@ text-decoration: none;
 
 }
 
- .home-text30 {
-    margin-bottom: 200px;
- top: 1533px;
- left: 519px;
- color: #081b29;
-width: 808px;
- height: auto;
- position: absolute;
- font-size: 28px;
-font-style: Regular;
- text-align: left;
- font-family: Itim;
- font-weight: 400;
-line-height: normal;
- font-stretch: normal;
- text-decoration: none;
- }
+.home-text21 {
+    text-align: left; /* Adjusting text alignment */
+    margin-bottom: 500px;
+    padding-bottom: 500px;
+    top: 1270px; /* Adjust the top position as needed */
+    left: 230px; /* Adjust the left position as needed */
+    color: #081b29;
+    width: 808px;
+    height: auto;
+    position: absolute;
+    font-size: 15px;
+    font-style: Regular;
+    font-family: Itim;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
 
  .profilepicture {
     top: 1255px;
@@ -418,20 +419,19 @@ line-height: normal;
   border-radius: 150px;
 
  }
-  .profilepicture1 {
-    top: 700px;
-   left: 50x;
-   width: 1000px;
-    height: 500px;
-  position: absolute;
+ .profilepicture1 {
+    top: 700px; 
+    left: 50px; 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
   }
-  .profilepicture2 {
-    top: 1400px;
-   left: 50x;
-   width: 1000px;
-    height: 500px;
-  position: absolute;
-  
+.profilepicture2 {
+    top: 1400px; 
+    left: 50px; 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
 
 
 
