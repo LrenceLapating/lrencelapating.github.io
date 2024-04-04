@@ -325,13 +325,14 @@ body {
     margin-bottom: 500px;
     padding-bottom: 500px;
     top: 1270px;
-    left: 230px;
+    left: 523px;
     color: #081b29;
     width: 808px;
     height: auto;
     position: absolute;
     font-size: 15px;
     font-style: Regular;
+    text-align: left;
     font-family: Itim;
     font-weight: 400;
     line-height: normal;
@@ -339,19 +340,24 @@ body {
     text-decoration: none;
 }
 
+.home-text21 p {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify
+}
+
 .profilepicture {
     top: 1255px;
-    left: 50px;
+    left: 50x;
     width: 300px;
     height: 300px;
     position: absolute;
     border-radius: 150px;
-    background-image: url('https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/408561542_1567191970778025_8960571794941938874_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BbYFifZ_5VMAb5Hc36i&_nc_ht=scontent.fdvo2-1.fna&oh=00_AfBMz6G_Si8LH09nZPdu2MiyQypE2_Z2YywTw2Jlq78VQw&oe=66143E82');
-    background-size: cover;
 }
 
 .profilepicture1 {
-    top: 1270px;
+    top: 700px;
     left: 50px;
     width: 150px;
     height: 150px;
@@ -359,8 +365,8 @@ body {
 }
 
 .profilepicture2 {
-    top: 1270px;
-    left: 250px;
+    top: 1400px;
+    left: 50px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -378,6 +384,7 @@ body {
     position: absolute;
     font-size: 30px;
     font-style: Regular;
+    text-align: left;
     font-family: Itim;
     font-weight: 400;
     line-height: normal;
