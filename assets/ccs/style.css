@@ -302,7 +302,7 @@ transition: .5s;
 
 .home-imgHover {
     position: absolute;
-    top: 20%;
+    bottom: 20%;
     left: 10%; /* Adjust as needed */
     transform: translate(-50%, -50%);
 
