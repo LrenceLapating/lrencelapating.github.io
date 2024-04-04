@@ -303,7 +303,6 @@ body {
     display: none;
     position: absolute;
     top: 100;
-    /* Position the dropdown at the bottom */
     left: 0;
     background: #081b29;
     border: 1px solid #081b29;
@@ -323,7 +322,6 @@ body {
 
 .home-text21 {
     text-align: left;
-    /* Adjusting text alignment */
     margin-bottom: 500px;
     padding-bottom: 500px;
     top: 1270px;
@@ -348,6 +346,8 @@ body {
     height: 300px;
     position: absolute;
     border-radius: 150px;
+    background-image: url('https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/408561542_1567191970778025_8960571794941938874_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BbYFifZ_5VMAb5Hc36i&_nc_ht=scontent.fdvo2-1.fna&oh=00_AfBMz6G_Si8LH09nZPdu2MiyQypE2_Z2YywTw2Jlq78VQw&oe=66143E82');
+    background-size: cover;
 }
 
 .profilepicture1 {
