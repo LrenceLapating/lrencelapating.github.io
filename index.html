@@ -14,11 +14,7 @@
             flex-direction: column;
             font-family: Arial, sans-serif;
             text-align: center;
-        }
-        h1 {
-            font-size: 2em;
-            color: red;
-            text-shadow: 2px 2px 5px white;
+            overflow: hidden;
         }
         .buttons {
             margin-top: 20px;
@@ -44,27 +40,68 @@
         .hidden {
             display: none;
         }
-        .glowing-heart {
-            font-size: 3em;
-            color: red;
-            text-shadow: 0 0 20px red, 0 0 30px white;
-            animation: glow 1s infinite alternate;
+        .surprise {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 182, 193, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            animation: fadeIn 1s ease-in-out;
         }
-        @keyframes glow {
-            from { text-shadow: 0 0 10px red, 0 0 20px white; }
-            to { text-shadow: 0 0 30px red, 0 0 50px white; }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .heart-animation {
+            font-size: 5em;
+            color: red;
+            animation: pop 0.5s ease-in-out infinite alternate;
+        }
+        @keyframes pop {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            opacity: 0.7;
+            border-radius: 50%;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            from {
+                transform: translateY(-100vh) rotate(0deg);
+            }
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+        .love-text {
+            font-size: 2em;
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
         }
     </style>
 </head>
 <body>
-    <h1>Can you be my Valentine? 💖</h1>
     <div class="buttons">
         <button class="yes-btn" onclick="showLove()">Yes</button>
         <button class="no-btn" onclick="growYes()">No</button>
     </div>
     <div id="love-message" class="hidden">
-        <div class="glowing-heart">❤️</div>
-        <h1>I love you mwaps! 😘</h1>
+        <div class="surprise">
+            <div class="heart-animation">❤️💖💞</div>
+            <div class="love-text">I love you mwaps</div>
+        </div>
     </div>
     <script>
         let yesBtn = document.querySelector('.yes-btn');
@@ -81,6 +118,19 @@
         function showLove() {
             buttons.style.display = 'none';
             loveMessage.classList.remove('hidden');
+            createConfetti();
+        }
+
+        function createConfetti() {
+            for (let i = 0; i < 100; i++) {
+                let confetti = document.createElement("div");
+                confetti.classList.add("confetti");
+                confetti.style.left = Math.random() * window.innerWidth + "px";
+                confetti.style.animationDuration = (Math.random() * 3 + 2) + "s";
+                confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
+                document.body.appendChild(confetti);
+                setTimeout(() => confetti.remove(), 5000);
+            }
         }
     </script>
 </body>
