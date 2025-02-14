@@ -1,71 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website HTML CSS | </title>
-    <link rel="stylesheet" href="/assets/ccs/style.css">
-    <link href='https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/408561542_1567191970778025_8960571794941938874_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGOCQKY1613D6kIwLP1pLWnzNwO7xi77BDM3A7vGLvsEKd6a7FzIsLyZEm4dxsIz-H2y_gNw0JBC3Cx66otwlpa&_nc_ohc=P48MvsDucMkQ7kNvgHmDVsN&_nc_oc=AdjCgXugJXKGvXvI--_7ccN6OD_HoF_59ZwTvx-eFEatHyMO71s_Edi50JfYeZhtobnCp0d3cheA-Br0g31iUE-A&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=APjTtGIxgRIizpPG8WJgBUO&oh=00_AYBENvbcb61S7X0iIIoOW2YcRIW_Aj5NIyeDAplu3SiLgQ&oe=67B2A602' rel='stylesheet'>
+    <title>Be My Valentine?</title>
     <style>
-        html {
-            scroll-behavior: smooth;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: pink;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            color: red;
+            text-shadow: 2px 2px 5px white;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        .yes-btn {
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+        }
+        .no-btn {
+            background-color: white;
+            color: red;
+            border-radius: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+        .glowing-heart {
+            font-size: 3em;
+            color: red;
+            text-shadow: 0 0 20px red, 0 0 30px white;
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px red, 0 0 20px white; }
+            to { text-shadow: 0 0 30px red, 0 0 50px white; }
         }
     </style>
 </head>
-
 <body>
+    <h1>Can you be my Valentine? 💖</h1>
+    <div class="buttons">
+        <button class="yes-btn" onclick="showLove()">Yes</button>
+        <button class="no-btn" onclick="growYes()">No</button>
+    </div>
+    <div id="love-message" class="hidden">
+        <div class="glowing-heart">❤️</div>
+        <h1>I love you mwaps! 😘</h1>
+    </div>
+    <script>
+        let yesBtn = document.querySelector('.yes-btn');
+        let noBtn = document.querySelector('.no-btn');
+        let loveMessage = document.getElementById('love-message');
+        let buttons = document.querySelector('.buttons');
+        let size = 16;
 
-    <header class="header">
-        <a href="#" class="logo">Lorss!</a>  
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#about-section">About</a>
-            <a href="https://lrencelapating.github.io/schedule.html">Learn HTML Activities</a>
-            <a href="https://lrencelapating.github.io/fashion.html">Fashion Blog</a>
-            <a href="https://lrencelapating.github.io/burger.html">Learn CSS Activities</a>
-            <a href="https://lrencelapating.github.io/financialtracker.html">Financial Tracker</a>
-        </nav>
-    </header>
+        function growYes() {
+            size += 10;
+            yesBtn.style.fontSize = size + 'px';
+        }
 
-    <section class="home">
-        <div class="home-content">
-            <h1>Hi, I'm Marc Laurence Lapating</h1> 
-            <h3>Web Developer</h3>
-            <p>I live in Davao City and I choose this subject Web Development because it unleashes your creativity, offers career opportunities, provides flexibility, encourages learning and problem-solving, supports entrepreneurial ventures, and allows you to make a global impact through your work. It's a versatile and fulfilling skillset that can positively connect with various aspects of your life.</p>
-            <div class="btn-box">
-                <a href="#about-section">About me</a>
-                <a href="#">Let's Talk</a>
-            </div>
-        </div>
-        <div class="home-sci">
-            <a href="https://www.facebook.com/laurencelapating" target="_blank"><i class='bx bxl-facebook'></i></a>
-            <a href="https://github.com/LrenceLapating" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.tiktok.com/@lowenss_" target="_blank"><i class='bx bxl-tiktok'></i></a>
-        </div>
-        <span class="home-imgHover"></span>
-
-        <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/408561542_1567191970778025_8960571794941938874_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGOCQKY1613D6kIwLP1pLWnzNwO7xi77BDM3A7vGLvsEKd6a7FzIsLyZEm4dxsIz-H2y_gNw0JBC3Cx66otwlpa&_nc_ohc=P48MvsDucMkQ7kNvgHmDVsN&_nc_oc=AdjCgXugJXKGvXvI--_7ccN6OD_HoF_59ZwTvx-eFEatHyMO71s_Edi50JfYeZhtobnCp0d3cheA-Br0g31iUE-A&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=APjTtGIxgRIizpPG8WJgBUO&oh=00_AYBENvbcb61S7X0iIIoOW2YcRIW_Aj5NIyeDAplu3SiLgQ&oe=67B2A602" />
-        <div class="home25">
-            <span class="home-text21">
-                <p> My name is Marc Laurence Lapating, and I am 19 years old. I live in Porras Delpilar St, Obrero Davao City, Davao del Sur. I graduated from San Roque Central during my elementary years. For junior high school, I completed my education at Assumption College of Davao. Later, for my senior high school, I graduated from Samson Polytechnic College. Currently, I am a second-year BSIT student at the University of Immaculate Conception. While I am still in the process of developing my programming and website development skills, I firmly believe that I will excel in these areas someday.</p>
-                <img src="https://lemwelll.github.io/assets/ccs/academycode.png" class="profilepicture1" />
-                <img src="https://lemwelll.github.io/assets/ccs/Learnyouhtml.png" class="profilepicture2" />
-                <span class="home-text22">
-                    <p> This is my CSS Activities</p>
-                    <span class="home-text23">
-                        <p> In this project, we successfully tackled the "learnyouhtml" task. It proved to be an engaging and enjoyable experience. It dawned on me that this activity provided valuable insights into our journey of skill development in the field of web development.</p>
-                    </span>
-                </span>
-            </span>
-        </div>
-    </section>
-
-    <section id="about-section" class="about">
-        <h2>About Me</h2>
-        <p>Welcome to my personal portfolio! I'm passionate about web development and continuously improving my skills.</p>
-    </section>
-
+        function showLove() {
+            buttons.style.display = 'none';
+            loveMessage.classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
